@@ -12,7 +12,7 @@ jobs:
       uses: qubitro/action-lambda-python-zip@v1.0
       with:
         lambda_layer_arn: 'arn:aws:lambda:us-east-2:259788987135:layer:AWSLambda-Python38-SciPy1x:29'
-        lambda_function_name: hello
+        lambda_function_name: arn:aws:lambda:us-east-2:728521507655:function:hello
         lambda_region: 'eu-central-2'
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
